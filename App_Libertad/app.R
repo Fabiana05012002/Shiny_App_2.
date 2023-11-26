@@ -67,7 +67,7 @@ server <- function(input, output, session) {
                                       datos_libertad$anio >= input$anio[1] &
                                       datos_libertad$anio <= input$anio[2], ]
     ggplot(data_filtered, aes(x = anio, y = .data[[selected_variable]])) +
-      geom_line(color = "red", size = 2) +
+      geom_line(color = "green", size = 2) +
       theme_minimal()
   }
   
